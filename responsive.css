@@ -1,0 +1,226 @@
+/* ===========================
+   TABLET — max 1024px
+=========================== */
+@media (max-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-visual {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .about-badge-card {
+    flex: 1;
+  }
+
+  .psira-card {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* ===========================
+   MOBILE — max 768px
+=========================== */
+@media (max-width: 768px) {
+  .section { padding: 72px 0; }
+
+  /* Nav */
+  .nav-links { display: none; }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    background: rgba(7, 31, 74, 0.97) !important;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .stat-num { font-size: 1.8rem; }
+
+  /* Trust */
+  .trust-container {
+    justify-content: flex-start;
+    gap: 12px 24px;
+  }
+
+  /* About */
+  .about-visual {
+    flex-direction: column;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  /* Courses */
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+  }
+
+  .promo-card .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 1;
+    height: 220px;
+  }
+
+  .gallery-item:not(.large) {
+    height: 180px;
+  }
+
+  /* Locations */
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrap {
+    padding: 28px 20px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Section headers */
+  .section-header .section-sub {
+    margin: 0 auto;
+  }
+
+  /* Promo Banner */
+  .promo-inner {
+    font-size: 0.82rem;
+  }
+
+  .promo-divider { display: none; }
+  .promo-urgent { display: none; }
+
+  /* WhatsApp float */
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 54px;
+    height: 54px;
+    font-size: 1.5rem;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE — max 480px
+=========================== */
+@media (max-width: 480px) {
+  .hero-title { font-size: 2.2rem; }
+
+  .hero-stats {
+    flex-wrap: wrap;
+  }
+
+  .stat-divider { display: none; }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item.large {
+    grid-column: span 1;
+    height: 260px;
+  }
+
+  .gallery-item:not(.large) {
+    height: 160px;
+  }
+
+  .location-info {
+    padding: 24px 20px;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .about-highlights {
+    gap: 10px;
+  }
+}
+
+/* ── Guarding Teaser responsive ── */
+@media (max-width: 1024px) {
+  .guarding-teaser-inner {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+  .guarding-sub { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .guarding-teaser { padding: 72px 0; }
+  .guarding-services-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .guarding-services-grid { grid-template-columns: 1fr; }
+}
